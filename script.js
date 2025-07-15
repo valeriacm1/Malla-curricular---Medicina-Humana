@@ -1,5 +1,4 @@
 function mostrarPreRequisito(curso) {
-  // Objeto con los pre-requisitos de cada curso según el documento proporcionado
   let preRequisitos = {
     "Química": "Nada",
     "Matemática": "Nada",
@@ -74,12 +73,3 @@ function mostrarPreRequisito(curso) {
   
   document.getElementById("descripcion-curso").innerText = `Pre-requisitos de ${cursoSeleccionado}: ${prerequisito}`;
 }
-
-// Función para inicializar los cursos habilitados o deshabilitados
-document.querySelectorAll('.curso').forEach(curso => {
-  if (curso.classList.contains('habilitado')) {
-    curso.innerText = curso.innerText + " - Habilitado";
-  } else if (curso.classList.contains('deshabilitado')) {
-    curso.innerText = curso.innerText + " - No disponible";
-  }
-});
