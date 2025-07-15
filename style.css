@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8e1f4;  /* Fondo rosa claro */
+  background-color: #f8e1f4;  /* Fondo rosa suave */
   color: #9b2d57;  /* Letras rosado oscuro */
 }
 
 header {
   text-align: center;
-  background-color: #f7b8c2;  /* Rosado más suave */
+  background-color: #f7b8c2;  /* Fondo rosado claro */
   color: #9b2d57;  /* Letras rosado oscuro */
   padding: 20px;
 }
@@ -14,23 +14,55 @@ header {
 #info-curso {
   margin-top: 20px;
   padding: 20px;
-  background-color: #ffffff;  /* Fondo blanco para la sección */
+  background-color: #ffffff;  /* Fondo blanco */
   border: 1px solid #ddd;
+}
+
+#info-curso p {
+  font-size: 1.1em;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.semestre {
+  margin: 20px;
+  background-color: #f8cce7;  /* Fondo rosa más suave */
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.semestre h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #9b2d57;
+}
+
+.cursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
   cursor: pointer;
-  color: #9b2d57;  /* Letras rosado oscuro */
-  border: 1px solid #9b2d57;
-  width: 300px;
-  text-align: left;
+  width: 200px;
+  background-color: #f7b8c2;  /* Fondo rosado claro */
+  color: #9b2d57;
+  border: none;
+  border-radius: 10px;  /* Bordes redondeados */
   transition: background-color 0.3s;
 }
 
-button.habilitado {
-  background-color: #f7b8c2;  /* Fondo rosado claro para los habilitados */
+button.habilitado:hover {
+  background-color: #f4a5bb;  /* Rosado más fuerte cuando el cursor está encima */
 }
 
 button.deshabilitado {
@@ -39,17 +71,21 @@ button.deshabilitado {
 
 button.aprobado {
   background-color: #9b2d57;  /* Fondo morado cuando está aprobado */
-  color: white;  /* Texto blanco */
+  color: white;
   text-decoration: line-through;  /* Tacha cuando se aprueba */
-}
-
-button.pre-requisito {
-  border: 2px solid red;  /* Borde rojo para los cursos pre-requisitos */
-  background-color: #f8e1f4;  /* Fondo rosado claro */
 }
 
 button.extracurricular {
   background-color: #a1e1a1;  /* Fondo verde claro para los cursos extracurriculares */
+}
+
+button.extras {
+  background-color: #e0f7fa;  /* Fondo azul suave para cursos extras */
+}
+
+button.pre-requisito {
+  background-color: #ffe0e0;  /* Fondo más suave para los pre-requisitos */
+  border: 2px solid #ff5c8d;  /* Borde rojo para los pre-requisitos */
 }
 
 button:hover {
