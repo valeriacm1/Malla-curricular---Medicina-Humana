@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Interactiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Malla Interactiva de la Carrera</h1>
+  </header>
 
+  <section id="malla">
+    <div class="cursos">
+      <h2>Primer Año</h2>
+      <ul>
+        <li><button onclick="verCurso('curso1')">Curso 1</button></li>
+        <li><button onclick="verCurso('curso2')">Curso 2</button></li>
+        <!-- Agrega más cursos aquí -->
+      </ul>
+    </div>
+
+    <!-- Agregar secciones de más años aquí -->
+
+  </section>
+
+  <div id="info-curso">
+    <h3>Información del Curso</h3>
+    <p id="descripcion-curso"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
