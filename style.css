@@ -1,1 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8e1f4;  /* Fondo rosa claro */
+  color: #9b2d57;  /* Letras rosado oscuro */
+}
 
+header {
+  text-align: center;
+  background-color: #f7b8c2;  /* Rosado más suave */
+  color: #9b2d57;  /* Letras rosado oscuro */
+  padding: 20px;
+}
+
+#info-curso {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;  /* Fondo blanco para la sección */
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  color: #9b2d57;  /* Letras rosado oscuro */
+  border: 1px solid #9b2d57;
+  width: 200px;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+button.habilitado {
+  background-color: #f7b8c2;  /* Fondo rosado claro para los habilitados */
+}
+
+button.deshabilitado {
+  background-color: #d3d3d3;  /* Gris para los deshabilitados */
+}
+
+button.aprobado {
+  background-color: #9b2d57;  /* Fondo morado cuando está aprobado */
+  color: white;  /* Texto blanco */
+  text-decoration: line-through;  /* Tacha cuando se aprueba */
+}
+
+button:hover {
+  background-color: #f4a5bb;  /* Rosado más oscuro cuando se pasa el ratón */
+}
+
+.cursos h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
