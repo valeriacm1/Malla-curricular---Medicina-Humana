@@ -12,34 +12,193 @@
   </header>
 
   <section id="malla">
-    <div class="cursos">
-      <h2>Primer Año</h2>
-      <ul>
-        <li><button class="curso habilitado" onclick="marcarCurso(this)">Química</button></li>
-        <li><button class="curso habilitado" onclick="marcarCurso(this)">Matemática</button></li>
-        <li><button class="curso habilitado pre-requisito" onclick="marcarCurso(this)">Lengua y Oratoria (Pre-requisito para Redacción)</button></li>
-        <li><button class="curso deshabilitado" onclick="marcarCurso(this)">Desempeño Universitario</button></li>
-        <li><button class="curso habilitado" onclick="marcarCurso(this)">Biología Celular y Molecular</button></li>
-      </ul>
+    <!-- 1er Ciclo -->
+    <div class="semestre">
+      <h2>1er Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Química</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Matemática</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Lengua y Oratoria</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Introducción a la Medicina</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Desempeño Universitario</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Biología Celular y Molecular</button>
+      </div>
     </div>
 
-    <div class="cursos">
-      <h2>Segundo Año</h2>
-      <ul>
-        <li><button class="curso habilitado" onclick="marcarCurso(this)">Redacción General (Pre-requisito para Realidad Nacional)</button></li>
-        <li><button class="curso habilitado" onclick="marcarCurso(this)">Realidad Nacional</button></li>
-        <li><button class="curso habilitado" onclick="marcarCurso(this)">Bioquímica</button></li>
-        <li><button class="curso habilitado" onclick="marcarCurso(this)">Anatomía General</button></li>
-        <li><button class="curso deshabilitado" onclick="marcarCurso(this)">Intro. a la Investigación</button></li>
-      </ul>
+    <!-- 2do Ciclo -->
+    <div class="semestre">
+      <h2>2do Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Redacción General</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Realidad Nacional</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Morfofisiología I</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Introducción a la Investigación</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Bioquímica</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Anatomía General</button>
+      </div>
     </div>
 
-    <!-- Más ciclos de cursos -->
+    <!-- 3er Ciclo -->
+    <div class="semestre">
+      <h2>3er Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Morfofisiología II</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Inmunología</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Genética Médica</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Filosofía</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Estadística General</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Educación Ambiental</button>
+      </div>
+    </div>
+
+    <!-- 4to Ciclo -->
+    <div class="semestre">
+      <h2>4to Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Morfofisiología III</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Infectología Básica</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Fisiopatología I</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Desarrollo y Crecimiento</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Bioética</button>
+      </div>
+    </div>
+
+    <!-- 5to Ciclo -->
+    <div class="semestre">
+      <h2>5to Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Salud Mental</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Morfofisiología IV</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Fundamentos de Medicina Intercultural</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Fisiopatología II</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Bioestadística</button>
+      </div>
+    </div>
+
+    <!-- 6to Ciclo -->
+    <div class="semestre">
+      <h2>6to Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Semiología basada en la simulación</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Semiología</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Farmacología</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Apoyo al Diagnóstico</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Anatomía Patológica</button>
+      </div>
+    </div>
+
+    <!-- 7mo Ciclo -->
+    <div class="semestre">
+      <h2>7mo Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Seguridad del Paciente y Calidad</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Nutrición y Prácticas Saludables</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Metodología de la Investigación</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Medicina Interna I</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Epidemiología</button>
+      </div>
+    </div>
+
+    <!-- 8vo Ciclo -->
+    <div class="semestre">
+      <h2>8vo Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Salud Pública</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Medicina Interna II</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Medicina Basada en la Evidencia</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Atención Primaria en Salud</button>
+      </div>
+    </div>
+
+    <!-- 9no Ciclo -->
+    <div class="semestre">
+      <h2>9no Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Tesis I</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Terapéutica</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Simulación Clínica Integrada</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Medicina Legal</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Medicina Interna III</button>
+      </div>
+    </div>
+
+    <!-- 10mo Ciclo -->
+    <div class="semestre">
+      <h2>10mo Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Simulación Quirúrgica</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Ecografía</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Cuidados Paliativos y Rehabilitación Física</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Cirugía</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Análisis de Casos I</button>
+      </div>
+    </div>
+
+    <!-- 11mo Ciclo -->
+    <div class="semestre">
+      <h2>11mo Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Tesis II</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Simulación Pediátrica</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Simulación Gineco-Obstetricia</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Pediatría</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Ginecología y Obstetricia</button>
+      </div>
+    </div>
+
+    <!-- 12mo Ciclo -->
+    <div class="semestre">
+      <h2>12mo Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Pre-Internado</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Informática Biomédica</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Gerencia en Salud</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Análisis de Casos II</button>
+      </div>
+    </div>
+
+    <!-- 13mo Ciclo -->
+    <div class="semestre">
+      <h2>13ro Ciclo</h2>
+      <div class="cursos">
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Trabajo de Investigación</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Internado en Pediatría</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Internado en Medicina</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Internado en Cirugía</button>
+        <button class="curso habilitado" onclick="mostrarPreRequisito(this)">Internado en Ginecología y Obstetricia</button>
+      </div>
+    </div>
+    
+    <!-- Cursos Electivos -->
+    <div class="semestre">
+      <h2>Cursos Electivos</h2>
+      <div class="cursos">
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Desarrollo Artístico</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Uso Correcto de Antibióticos</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Simulación en Salud</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Radioanatomía</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Neuropsicofarmacología</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Medicina Ocupacional</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Neurociencia en Salud</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Medicina Interna Interprofesional</button>
+        <button class="curso extracurricular" onclick="mostrarPreRequisito(this)">Medicinas Tradicionales Alternativas y Complementarias</button>
+      </div>
+    </div>
+
+    <!-- Cursos Extras -->
+    <div class="semestre">
+      <h2>Cursos Extras</h2>
+      <div class="cursos">
+        <button class="curso extras" onclick="mostrarPreRequisito(this)">Examen de Suficiencia Médica</button>
+        <button class="curso extras" onclick="mostrarPreRequisito(this)">Acreditación de Suficiencia en Inglés</button>
+        <button class="curso extras" onclick="mostrarPreRequisito(this)">Inglés A2</button>
+      </div>
+    </div>
   </section>
 
   <div id="info-curso">
     <h3>Información del Curso</h3>
-    <p id="descripcion-curso"></p>
+    <p id="descripcion-curso">Selecciona un curso para ver los pre-requisitos.</p>
   </div>
 
   <script src="script.js"></script>
